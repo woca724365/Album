@@ -1,54 +1,144 @@
-.container{
-background-color: #cfe7aa; ;
-}
-.row{
-background-color: #cee6a7;
-}
+<!DOCTYPE html>
+<html lang="tr">
 
-.clickable {
-cursor: pointer;
-transition: transform 0.2s ease;
-}
+<head>
+    <meta charset="UTF-8">
+    <title>Resim Galerisi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Style.css"> <!-- Eğer özel stiller varsa -->
+    <style>
+        .row.g-3 .col-md-4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 250px;
+            overflow: hidden;
+        }
 
-.clickable:hover {
-transform: scale(1.05);
-}
-.baslik{
-text-align: center;
-background: rgb(138, 108, 108);
-color:#e1eccf;
-background-repeat: repeat;
-box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-background-position: 20%;
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
-}
-.img-fluid:hover {
-transform: scale(1.03);
-transition: 0.3s ease;
-}
-header { /*homepage */
-display: flex;
-justify-content: center; /* Yatayda ortalar */
-align-items: center; /* Dikeyde ortalar */
-text-align: center;
-margin-top: 5px;
-height: 150px;
-background: rgb(138, 108, 108);
-color: #93b858;
-background-repeat: repeat;
-box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-background-position: 20%;
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
-}
-nav a {
-color: #e1eccf;
-text-decoration: none;
-margin: 0 10px;
-transition: color 0.3s ease;
-}
+        .row.g-3 .col-md-4 img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
 
-nav a:hover {
-color: #f4d03f; /* Altın sarısı – hover efekti */
-}
+        .row.g-3 .col-md-4 img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="baslik">
+            <h2>M A N T A R L A R </h2>
+            <div class="row">
+
+            </div>
+    </nav>
+
+    <!-- GALERİ -->
+    <div class="container mt-5">
+        <div class="row g-3">
+            <div class="col-md-4">
+                <img src="images/Mushrooms/mushrooms-9494682_1280.jpg" data-bs-toggle="modal" data-bs-target="#modal1"
+                    class="img-fluid rounded clickable">
+            </div>
+            <div class="col-md-4">
+                <img src="images/Mushrooms/mushrooms-478055_1280.jpg" data-bs-toggle="modal" data-bs-target="#modal2"
+                    class="img-fluid rounded clickable">
+            </div>
+            <div class="col-md-4">
+                <img src="images/Mushrooms/pexels-hashish-382040.jpg" data-bs-toggle="modal" data-bs-target="#modal3"
+                    class="img-fluid rounded clickable">
+            </div>
+            <div class="col-md-4">
+                <img src="images/Mushrooms/pexels-ireneusz-marcinkowski-488991884-18713621.jpg" data-bs-toggle="modal"
+                    data-bs-target="#modal4" class="img-fluid rounded clickable">
+            </div>
+            <div class="col-md-4">
+                <img src="images/Mushrooms/pexels-lum3n-44775-168140.jpg" data-bs-toggle="modal"
+                    data-bs-target="#modal5" class="img-fluid rounded clickable">
+            </div>
+            <div class="col-md-4">
+                <img src="images/Mushrooms/pexels-pixabay-361186.jpg" data-bs-toggle="modal" data-bs-target="#modal6"
+                    class="img-fluid rounded clickable">
+            </div>
+            <div class="col-md-4">
+                <img src="images/Mushrooms/pexels-lum3n-44775-168140.jpg" data-bs-toggle="modal"
+                    data-bs-target="#modal7" class="img-fluid rounded clickable">
+            </div>
+            <div class="col-md-4">
+                <img src="images/Mushrooms/pexels-pixabay-361186.jpg" data-bs-toggle="modal" data-bs-target="#modal8"
+                    class="img-fluid rounded clickable">
+            </div>
+            <div class="col-md-4">
+                <img src="images/Mushrooms/mushroom-7570693_1280.jpg" data-bs-toggle="modal" data-bs-target="#modal9"
+                    class="img-fluid rounded clickable">
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALLAR -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"><img src="images/Mushrooms/mushrooms-9494682_1280.jpg" class="img-fluid"></div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"><img src="images/Mushrooms/mushrooms-478055_1280.jpg" class="img-fluid"></div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"><img src="images/Mushrooms/pexels-hashish-382040.jpg" class="img-fluid"></div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal4" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"><img src="images/Mushrooms/pexels-ireneusz-marcinkowski-488991884-18713621.jpg"
+                    class="img-fluid"></div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal5" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"><img src="images/Mushrooms/pexels-lum3n-44775-168140.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal6" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"><img src="images/Mushrooms/pexels-pixabay-361186.jpg" class="img-fluid"></div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal7" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"><img src="images/Mushrooms/pexels-lum3n-44775-168140.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal8" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"><img src="images/Mushrooms/pexels-pixabay-361186.jpg" class="img-fluid"></div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal9" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"><img src="images/Mushrooms/mushroom-7570693_1280.jpg" class="img-fluid"></div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
