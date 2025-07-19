@@ -27,7 +27,7 @@
             padding: 5px;
             height: 100%;
             background-color: #f9f9f9;
-            border: 1px solid #ddd;
+            border: 1px solid #cfbdbd;
             border-radius: 8px;
             display: flex;
             align-items: center;
@@ -38,8 +38,8 @@
             max-width: 100%;
             max-height: 100%;
             object-fit: cover;
-            border-radius: 6px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+            box-shadow: 0 0 5px rgba(0, 0, 10, 0.80);
         }
 
         header h1 {
@@ -69,48 +69,55 @@
 
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="HomePage.html">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="People.html">Wedding</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Link</a>
+                        <a class="nav-link dropdown-toggle" href="People.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">On Picnic</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">List Photoes</a></li>
+                            <li><a class="dropdown-item" href="#">Add Photoes</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Link</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Animals</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Görsel Grid -->
-    <div class="container-fluid full-height">
-        <div class="row h-100">
-            <div class="col-md-3 col-6 grid-box">
-                <img src="images/Animals/grass-snake-7150872_1280.jpg" alt="Bölüm 1">
-            </div>
-            <div class="col-md-3 col-6 grid-box">
-                <img src="images/Mushrooms/mushroom-7570693_1280.jpg" alt="Bölüm 2">
-            </div>
-
-        </div>
-    </div>
-    <div class="container-fluid full-height">
-        <div class="row h-100">
-
-            <div class="col-md-3 col-6 grid-box">
-                <img src="images/Animals/albino-burmese-python-8511553_1280.jpg" alt="Bölüm 3">
-            </div>
-            <div class="col-md-3 col-6 grid-box">
-                <img src="images/Mushrooms/mushrooms-9494682_1280.jpg" alt="Bölüm 4">
+    <div class="IndexPage">
+        <div class="container-fluid">
+            <div class="row h-100">
+                <div class="col grid-box">
+                    <img src="images/People/AA1IHydW.jpg" height="426px" alt="Bölüm 1">
+                </div>
+                <div class="col grid-box">
+                    <img src="images/Natures/autumn-287393_1280.jpg" alt="Bölüm 1">
+                </div>
             </div>
         </div>
+        <div class="container-fluid">
+            <div class="row h-100">
+                <div class="col grid-box">
+                    <img src="images/People/istockphoto-1470566703-1024x1024.jpg" alt="Bölüm 1">
+                </div>
+                <div class="col grid-box">
+                    <img src="images/People/istockphoto-1422868465-1024x1024.jpg" alt="Bölüm 1">
+                </div>
+                <div class="col grid-box">
+                    <img src="images/People/istockphoto-588266428-1024x1024.jpg" alt="Bölüm 1">
+                </div>
+                <div class="col grid-box">
+                    <img src="images/Animals/snake-2291913_1280.jpg" alt="Bölüm 1">
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Bootstrap JS -->

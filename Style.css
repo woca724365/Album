@@ -1,8 +1,9 @@
 .container{
-    background-color: #cfe7aa;  ;
+    background-color: #cfe7aa;  
+    
 }
 .row{
-    background-color: #cee6a7;
+    background-color: #ebcd26;
 }
 
 .clickable {
@@ -24,8 +25,8 @@ border-top-left-radius: 20px;
 border-top-right-radius: 20px;
 }
 .img-fluid:hover {
-  transform: scale(1.03);
-  transition: 0.3s ease;
+transform: scale(1.03);
+transition: 0.3s ease;
 }
  header { /*homepage */
   display: flex;
@@ -76,4 +77,15 @@ nav a:hover {
     box-shadow: 0 0 5px rgba(100,100,255,0.3);
     background-color: rgba(255,255,255,0.9);
   }
+
+  .IndexPage{
+    display: flex;
+    display: contents;
+    width: inherit;
+    height: 100px;
+    align-items: stretch;
+  
+  }
+
+
  
